@@ -12,8 +12,14 @@
     --mine_notifications: #ff8f00;
     --mine_neutral-semitransparent: #e5e5e566;
     --mine_primary: #1b72e8;
-    --mine_grey: #e5e5e5;
+  
 }
+/* region direct tag */
+li, a{
+    text-decoration:none;
+    color: var(--mine_light);
+}
+/* #End region direct tag */
 
 .bg_primary {
     background-color: var(--mine_primary);
