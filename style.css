@@ -1,9 +1,89 @@
+/* Region Root */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main{
-    background-color: red;
+:root {
+    --mine_light: #e5e5e5;
+    --mine_dark: #051e34;
+    --mine_notifications: #ff8f00;
+    --mine_neutral-semitransparent: #e5e5e566;
+    --mine_primary: #1b72e8;
+    --mine_grey: #e5e5e5;
 }
+
+.bg_primary {
+    background-color: var(--mine_primary);
+}
+
+.bg_dark {
+    background-color: var(--mine_dark);
+}
+
+/* #endregion utilities */
+/* #region top */
+
+.top {
+    height: 65px;
+    width: 100%;
+}
+
+
+.top nav {
+    height: 100%;
+}
+
+/* #endregion top */
+/* #region bottom*/
+/* sidebar */
+
+.bottom>.sidebar {
+    width: 70px;
+    height: calc(100vh - 65px);
+    background-image: url(./assets/img/sidebar-bg.png);
+    overflow-y: hidden;
+  
+}
+
+/* main header */
+
+#main_header {
+    height: 200px;
+    width: 100%;
+    background-color: var(--mine_primary);
+}
+
+
+.bottom>.content {
+    width: calc(100% - 70px);
+    overflow-y: auto;
+    height: calc(100vh - 65px);
+}
+
+/* #endregion bottom*/
+/* region media query */
+@media screen and (min-width: 992px) {
+
+    .bottom>.sidebar {
+        width: 150px;
+    }
+
+    .bottom>.content {
+        width: calc(100% - 150px);
+    }
+
+    #offcanvasRight {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #offcanvasRight {
+        width: 100%;
+    }
+}
+
+/* #END region media query */
