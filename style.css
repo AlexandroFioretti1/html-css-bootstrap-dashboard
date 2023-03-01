@@ -7,11 +7,13 @@
 }
 
 :root {
+    --mine_s_light: #f3f2f2;
     --mine_light: #e5e5e5;
     --mine_dark: #051e34;
     --mine_notifications: #ff8f00;
     --mine_neutral-semitransparent: #e5e5e566;
     --mine_primary: #1b72e8;
+    --mine_white:white;
   
 }
 /* region direct tag */
@@ -25,8 +27,22 @@ li, a{
     background-color: var(--mine_primary);
 }
 
+.bg_light{
+    background-color: var(--mine_light);
+}
+.bg_s_light{
+    background-color: var(--mine_s_light);
+}
+
+.bg_white{
+    background-color: var(--mine_white);
+}
 .bg_dark {
     background-color: var(--mine_dark);
+}
+
+.bg_gray{
+    background-color: var(--mine_neutral-semitransparent);
 }
 
 /* #endregion utilities */
@@ -36,7 +52,6 @@ li, a{
     height: 65px;
     width: 100%;
 }
-
 
 .top nav {
     height: 100%;
