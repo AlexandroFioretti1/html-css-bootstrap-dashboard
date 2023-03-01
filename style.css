@@ -13,35 +13,45 @@
     --mine_notifications: #ff8f00;
     --mine_neutral-semitransparent: #e5e5e566;
     --mine_primary: #1b72e8;
-    --mine_white:white;
-  
+    --mine_white: white;
+
 }
+
 /* region direct tag */
-li, a{
-    text-decoration:none;
+li,
+a {
+    text-decoration: none;
     color: var(--mine_light);
 }
+
 /* #End region direct tag */
+.border_bnt {
+    border: solid 1px white;
+    background-color: var(--mine_primary);
+    color: white;
+}
 
 .bg_primary {
     background-color: var(--mine_primary);
 }
 
-.bg_light{
+.bg_light {
     background-color: var(--mine_light);
 }
-.bg_s_light{
+
+.bg_s_light {
     background-color: var(--mine_s_light);
 }
 
-.bg_white{
+.bg_white {
     background-color: var(--mine_white);
 }
+
 .bg_dark {
     background-color: var(--mine_dark);
 }
 
-.bg_gray{
+.bg_gray {
     background-color: var(--mine_neutral-semitransparent);
 }
 
@@ -57,8 +67,19 @@ li, a{
     height: 100%;
 }
 
+
 /* #endregion top */
 /* #region bottom*/
+
+/* debug */
+#app_main {
+    background-color: var(--mine_primary);
+    color: var(--mine_white);
+    height: 170px;
+    width: 100%;
+}
+
+
 /* sidebar */
 
 .bottom>.sidebar {
@@ -66,7 +87,7 @@ li, a{
     height: calc(100vh - 65px);
     background-image: url(./assets/img/sidebar-bg.png);
     overflow-y: hidden;
-  
+
 }
 
 /* main header */
@@ -91,19 +112,8 @@ li, a{
     .bottom>.sidebar {
         width: 150px;
     }
-
     .bottom>.content {
         width: calc(100% - 150px);
-    }
-
-    #offcanvasRight {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    #offcanvasRight {
-        width: 100%;
     }
 }
 
