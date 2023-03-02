@@ -101,8 +101,8 @@ a {
 
 #app_main {
     width: calc(100% - 70px);
-    overflow: auto;
-    height: calc(100vh - 65px);
+    overflow-y: auto;
+    height: calc(100vh - 70px);
 }
 
 /* #endregion bottom*/
