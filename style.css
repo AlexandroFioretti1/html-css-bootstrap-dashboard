@@ -62,7 +62,7 @@ a {
 /* #region top */
 
 .top {
-    height: 60px;
+    height: 70px;
     width: 100%;
 }
 
@@ -74,8 +74,9 @@ a {
     margin-top: 5rem;
 }
 
+
 /* #endregion top */
-#app_main {
+.main_top {
     background-color: var(--mine_primary);
     color: var(--mine_white);
     height: 170px;
@@ -98,9 +99,9 @@ a {
     background-color: var(--mine_primary);
 }
 
-.bottom>.content {
+#app_main {
     width: calc(100% - 70px);
-    overflow-y: auto;
+    overflow: auto;
     height: calc(100vh - 65px);
 }
 
